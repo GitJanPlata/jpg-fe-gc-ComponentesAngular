@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Formulario de Alta de Clientes</h2>
+    <form (submit)="guardarCliente()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="cif">CIF:</label>
+        <input type="text" class="form-control" id="cif" [(ngModel)]="cif" name="cif">
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" class="form-control" id="direccion" [(ngModel)]="direccion" name="direccion">
+      </div>
+      <div class="form-group">
+        <label for="grupo">Grupo:</label>
+        <select [(ngModel)]="grupo" name="grupo" class="form-control">
+          <option value="Grupo 1">Grupo 1</option>
+          <option value="Grupo 2">Grupo 2</option>
+          <option value="Grupo 3">Grupo 3</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>

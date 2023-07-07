@@ -1,1 +1,0 @@
-# jpg-fe-gc-ComponentesAngular
